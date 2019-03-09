@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>测试页面</title>
+	<style type="text/css">
+		.box{
+			height: 2000px;
+		}
+	</style>
 </head>
 <body>
-	<script src="dateFormate.js"></script>
+	<div class="box"></div>
+	<script src="fn/debounce.js"></script>
+	<script>
+		window.onscroll = debounce(log, 500, 2);
+		function log(a){
+			console.log(a);
+		}
+	</script>
 </body>
 </html>
